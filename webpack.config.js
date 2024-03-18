@@ -8,7 +8,17 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js', // [name] what ever entry name is, can run npm build and it'll change the dist.js
+        filename: '[name][contenthash].js', // [name] what ever entry name is, can run npm build and it'll change the dist.js
+    },
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname, 'dist'),
+        },
+        port: 3000,
+        open: true,
+        hot: true,
+        compress: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [
