@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(__dirname, 'src/index.js')
+        bundle: path.resolve(__dirname, 'src/index.js', 'src/home.js')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -26,6 +26,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader', 'sass-loader', ],
+            },
             {
                 test: /\.scss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader', ],
