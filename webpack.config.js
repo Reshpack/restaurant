@@ -9,7 +9,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js', // [name] what ever entry name is, can run npm build and it'll change the dist.js
+        clean: true,
     },
+    devtool: 'source-map',
     devServer: {
         static: {
             directory: path.resolve(__dirname, 'dist'),
