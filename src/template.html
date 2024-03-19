@@ -6,10 +6,35 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="container">
-        <h1>
-            hello world
-        </h1>
+    <div id="main">
+        <div class="header">
+            <div class="global-nav">
+                <ul>
+                    <li class="caption">
+                        <a class="navlink" href="/reservations">Reservations</a>
+                    </li>
+                    <li class="caption">
+                        <a class="navlink" href="/menu">Menu</a>
+                    </li>
+                    <li class="caption">
+                        <a class="navlink" href="/story">Our Story</a>
+                    </li>
+                    <li class="caption">
+                        <a class="navlink" href="/contact">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-hamburger">
+                <div>
+                    <span class="Close"></span>
+                </div>
+                <div>
+                    <span class="Open"></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-content"></div>
+        <footer></footer>
     </div>
 </body>
 </html>
