@@ -28,6 +28,16 @@ module.exports = {
                 test: /\.scss$/,
                 use: [ 'style-loader', 'css-loader', 'sass-loader', ],
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                Use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    },
+                },
+            },
         ],
     },
     plugins: [
