@@ -26,7 +26,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: [ 'style-loader', 'css-loader'],
             },
             {
@@ -51,7 +51,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Elysium',
+            title: 'Gourmet Crust & Co.',
             filename: 'index.html',
             template: 'src/home.html',
         }),
