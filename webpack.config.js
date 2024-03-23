@@ -51,7 +51,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Elysium',
+            title: 'ChillBean Café',
             filename: 'index.html',
             template: 'src/home.html',
         }),
