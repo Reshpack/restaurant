@@ -51,7 +51,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Gourmet Crust & Co.',
+            title: 'Elysium',
             filename: 'index.html',
             template: 'src/home.html',
         }),

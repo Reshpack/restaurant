@@ -10,6 +10,10 @@
   font-family: 'Cormorant Garamond', sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 /* Header styles */
 .main {
   padding: 10px;
@@ -22,11 +26,22 @@
 
 /* navbar */
 .navbar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline;
 }
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar ul
 
 .nav-item {
   margin-right: 20px;
@@ -44,6 +59,14 @@
   color: #666;
 }
 
+.navlink a:active::before,
+.navlink a:active::before,
+.navlink a:visited {
+  color: #666;
+}
+
+
+
 /* images */
 #scallopImg {
   width: 100%;
@@ -55,6 +78,9 @@
   width: 30px;
 }
 
+#logoImg {
+  width: 100px;
+}
 /* footer */
 
 footer {

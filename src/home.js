@@ -10,3 +10,8 @@ import gitHub from './assets/github.png';
 
 const gitHubImg = document.getElementById('gitHubImg');
 gitHubImg.src = gitHub
+
+import logo from './assets/logo.png'
+
+const logoImg = document.getElementById('logoImg');
+logoImg.src = logo
