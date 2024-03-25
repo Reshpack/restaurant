@@ -8,6 +8,7 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -25,7 +26,9 @@ html {
   width: 30px;
 }
 
-
+#navLogo {
+  width: 250px;
+}
 
 /* copyright footer */
 footer {
